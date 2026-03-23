@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background-color: #0d1117;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.light-mode {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.light-mode header {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 3px solid #007acc;
+}
+
+.light-mode header h1 {
+    color: #007acc;
+}
+
+.light-mode nav a {
+    color: #007acc;
+}
+
+.light-mode nav a:hover {
+    color: #005999;
+}
+
+.light-mode a {
+    color: #007acc;
+}
+
+.light-mode a:hover {
+    color: #005999;
+}
+
+.light-mode section {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.light-mode section h2 {
+    color: #007acc;
+    border-bottom: 2px solid #007acc;
+}
+
+.light-mode .project {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.light-mode .project h3 {
+    color: #007acc;
+}
+
+.light-mode footer {
+    background-color: #fff;
+    color: #666;
+    border-top: 3px solid #007acc;
+}
+
+.light-mode ul li {
+    color: #333;
+}
+
+.light-mode .project img {
+    border: 2px solid #007acc;
+    box-shadow: 0 0 16px rgba(0, 122, 204, 0.35);
+    background-color: #fff;
+}
+
+.light-mode .whatsapp-icon,
+.light-mode .linkedin-icon,
+.light-mode .email-icon {
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+header {
+    background-color: #010409;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid #1f6feb;
+    position: relative;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+    color: #ffd700;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: 2px solid currentColor;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #ffd700;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.light-mode #theme-toggle {
+    color: #007acc;
+}
+
+.light-mode #theme-toggle:hover {
+    background-color: rgba(0, 122, 204, 0.1);
+}
+
+#toggle-circle {
+    transition: cx 0.3s ease;
+}
+
+#theme-toggle.toggled #toggle-circle {
+    cx: 17;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #58a6ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #79c0ff;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #58a6ff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #79c0ff;
+}
+
+#about p {
+    text-align: justify;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #161b22;
+    border-radius: 8px;
+}
+
+#about, #skills, #projects, #contact {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #ffd700;
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.45);
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 0.5rem;
+}
+
+.project {
+    border: 1px solid #30363d;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #0d1117;
+    border-radius: 6px;
+}
+
+.project h3 {
+    color: #79c0ff;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #010409;
+    color: #8b949e;
+    text-align: center;
+    padding: 1rem;
+    border-top: 3px solid #1f6feb;
+}
+
+ul li {
+    color: #e0e0e0;
+}
+
+.project img {
+    max-width: 900px; /* 3% increase from 400px */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0.75rem auto;
+    border-radius: 8px;
+    border: 2px solid #ffd700;
+    box-shadow: 0 0 16px rgba(255, 215, 0, 0.35);
+    background-color: #0a0f14;
+}
+
+.whatsapp-icon,
+.linkedin-icon,
+.email-icon {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 6px;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
+}
+

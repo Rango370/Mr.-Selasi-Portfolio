@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <button id="theme-toggle">
+            <svg id="theme-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="2" width="20" height="20" rx="10" ry="10" stroke="currentColor" stroke-width="2" fill="none"/>
+                <circle id="toggle-circle" cx="7" cy="12" r="4" fill="currentColor"/>
+            </svg>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <h3>Software Engineer | Strategic Affiliate Marketer | Financial Analyst</h3>
+        <p>
+My Name is MR.LAWRENCE SELASI DUNCAN. I am a 🎓BSc. Software Engineering student at GHANA COMMUNICATION TECHNOLOGY UNIVERSITY (GCTU) with a passion for building high-performance digital systems and scalable online ventures. My background in technical logic and system architecture allows me to approach Affiliate Marketing with a data-driven edge, optimizing conversion paths through analytical rigor. Whether I am coding in C++, analyzing Smart Money Concepts (SMC) in the markets, or scaling affiliate campaigns, my focus remains on precision, leadership, and technical excellence. I bridge the gap between complex engineering and digital profitability.
+</p>
+<p>🎓 BSc. Software Engineering @ GCTU</p>
+<p>🔗 Affiliate Marketer | Driving digital growth through tech.</p> 
+<p>📊 SMC Trader | Analyzing market liquidity with logic.</p>📊 Financial Analyst | Specializing in Smart Money Concepts (SMC).
+<p>💻 Engineering the intersection of Tech & Finance.</p>
+<p>📍 Accra, Ghana | GMT+0</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul> 
+            <li>🌐Web Development</li>
+            <li>🎞️Video Editing</li>
+            <li>🎥Videography</li>
+            <li>📸Photography</li>
+            <li>🎨Graphic Design</li>
+            
+        </ul>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <img src="Screenshot 2026-03-22 235256.png" alt="Project 1 Screenshot">
+            <p>This is a simple Project which focused on the energy efficiency of generators.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="Screenshot 2026-03-23 002225.png" alt="Project 2 Screenshot">
+            <p>This is a simple Project which focused on a survery format</p>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><img class="email-icon" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail icon"> <a href="mailto:lawrenceselasi@gmail.com">lawrenceduncan2007@gmail.com</a></p>
+        <p><a href="http://www.linkedin.com/in/lawrence-selasi-duncan-ba32983b8"><img class="linkedin-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png'" alt="LinkedIn icon"> Lawrence Selasi Duncan</a></p>
+        <p><a href="https://wa.me/233205402352?text=Hello%20Rich.%0AI'm%20[Your%20Name].%0AI%20saw%20your%20Portfolio%20and%20would%20like%20to%20connect."><img class="whatsapp-icon" src="Print_Glyph_Green.png" alt="WhatsApp icon"> +233 205 402 352</a></p>
+        <p>📞 <a href="tel:+233556584816">+233 556 584 816</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            body.classList.add('light-mode');
+            themeToggle.classList.add('toggled');
+        }
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            themeToggle.classList.toggle('toggled');
+            const isLight = body.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        });
+    </script>
+</body>
+</html>
